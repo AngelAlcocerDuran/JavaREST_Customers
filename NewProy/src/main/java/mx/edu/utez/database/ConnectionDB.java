@@ -16,7 +16,7 @@ public class ConnectionDB {
         String url = String.format("jdbc:mysql://%s:%s/%s?useSSL=%s&serverTimezone=%s", host, port, database, useSSL, timezone);
 
         DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-        return DriverManager.getConnection(url, "root", "");
+        return DriverManager.getConnection(url, "root", "ROOT");
     }
 
     // Bloque de prueba de Conexión
